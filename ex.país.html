@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Nacionalidade</title>
+    <style>
+    body {
+        background: rgb(1, 67, 2);
+        font: normal 20px;
+        color: black;
+        }
+        h1 {
+            font: normal 20px;
+            color: gold;
+        }
+        h2 {
+            font: normal 20px;
+            color: black;
+         }
+        h3{
+            font: normal 20px;
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Nacionalidade</h1>
+<p><h2>Informe seu país de origem</h2></p>
+<h3>Nação:  <input type="text" name="txtnacao" id="txtnacao">
+<input type="button" value="verificar" onclick="confirmarNacionalidade()"></h3>
+<div id="res">
+
+</div>
+<script>
+    function confirmarNacionalidade (){
+        var nacionalidade =window.document.querySelector('input#txtnacao').value 
+        var res = window.document.querySelector('div#res')
+        if(nacionalidade !='Brasil'){
+            res.innerHTML =`<p> Você  é <strong>ESTRANGEIR0</strong> ${nacionalidade}</P>`
+        }else {
+            res.innerHTML =`<p> Você é <strong>BRASILEIRO</STRONG></p>`
+
+        }
+      
+
+
+        
+    }
+
+    
+            
+
+</script>
+
+
+
+    
+</body>
+</html>
